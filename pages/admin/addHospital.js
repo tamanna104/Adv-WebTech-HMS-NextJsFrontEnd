@@ -34,7 +34,7 @@ export default function AddHospital() {
         formData.append('bloodBank', data.bloodBank);
         console.log(formData);
         try {
-            const response = await axios.post("http://localhost:3000/hospital/insertHospital",
+            const response = await axios.post("http://adv-webtech-hms-nestjs-production.up.railway.app/hospital/insertHospital",
                 formData, {
                 headers: {
                     "Content-Type": "multipart/form-data"

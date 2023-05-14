@@ -79,7 +79,7 @@ export default function bloodBankInfo({ data }) {
   export async function getServerSideProps(context) {
     const id=context.params.id;
    
-       const response = await axios.get('http://localhost:3000/hospital/findBankByHospital/'+id);
+       const response = await axios.get('http://adv-webtech-hms-nestjs-production.up.railway.app/hospital/findBankByHospital/'+id);
        const data = await response.data;
       
    return { props: { data } }

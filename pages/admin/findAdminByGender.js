@@ -99,7 +99,7 @@ export default function findAdminByGender({ data }) {
   export async function getServerSideProps({ query }) {
     const inputValue = query.inputValue;
     try {
-    const response = await axios.get('http://localhost:3000/admin/getAdminByGender/'+inputValue);
+    const response = await axios.get('http://adv-webtech-hms-nestjs-production.up.railway.app/admin/getAdminByGender/'+inputValue);
     const data = await response.data;
 
   

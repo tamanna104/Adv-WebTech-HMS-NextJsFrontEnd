@@ -46,7 +46,7 @@ export default function viewHospitals({ data }) {
   }
   export async function getServerSideProps() {
  
-    const response = await axios.get('http://localhost:3000/hospital/all');
+    const response = await axios.get('http://adv-webtech-hms-nestjs-production.up.railway.app/hospital/all');
     const data = await response.data;
   
 return { props: { data } }

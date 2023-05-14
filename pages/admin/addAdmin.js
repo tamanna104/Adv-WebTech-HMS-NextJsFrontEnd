@@ -36,7 +36,7 @@ export default function AddAdmin() {
         formData.append('file', data.file[0]);
         console.log(formData);
         try {
-            const response = await axios.post("http://localhost:3000/admin/signup",
+            const response = await axios.post("http://adv-webtech-hms-nestjs-production.up.railway.app/admin/signup",
                 formData, {
                 headers: {
                     "Content-Type": "multipart/form-data"

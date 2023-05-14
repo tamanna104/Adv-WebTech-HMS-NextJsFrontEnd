@@ -51,7 +51,7 @@ export default function findAdmin({ data }) {
     const inputValue = query.inputValue;
     if (inputValue) {
       try {
-        const response = await axios.get('http://localhost:3000/admin/getAdmin/'+inputValue);
+        const response = await axios.get('http://adv-webtech-hms-nestjs-production.up.railway.app/admin/getAdmin/'+inputValue);
         const data = await response.data;
         if (data) {
           return {

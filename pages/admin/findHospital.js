@@ -39,7 +39,7 @@ export default function findHospital({ data }) {
   export async function getServerSideProps({ query }) {
     const inputValue = query.inputValue;
     try {
-    const response = await axios.get('http://localhost:3000/hospital/getHospital/'+inputValue);
+    const response = await axios.get('http://adv-webtech-hms-nestjs-production.up.railway.app/hospital/getHospital/'+inputValue);
     const data = await response.data;
   
     return {

@@ -31,7 +31,7 @@ export default function viewAdmins({ data }) {
   }
   export async function getServerSideProps() {
  
-    const response = await axios.get('http://localhost:3000/admin/all');
+    const response = await axios.get('http://adv-webtech-hms-nestjs-production.up.railway.app/admin/all');
     const data = await response.data;
   
 return { props: { data } }
