@@ -14,7 +14,7 @@ export default function SignIn() {
     event.preventDefault()
 
     try {
-      const response = await axios.post('http://adv-webtech-hms-nestjs-production.up.railway.app/admin/signin', { email, password })
+      const response = await axios.post('https://adv-webtech-hms-nestjs-production.up.railway.app/admin/signin', { email, password })
       // if(response.data &&response.data.message=="success" )
       if(response.data)
       {

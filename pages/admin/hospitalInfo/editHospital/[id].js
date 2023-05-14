@@ -35,7 +35,7 @@ export default function EditHospital({item}) {
         // formData.append('password', data.password);
         console.log(formData);
         try {
-          const response = await axios.put("http://adv-webtech-hms-nestjs-production.up.railway.app/hospital/updateHospital/"+item.id, formData);
+          const response = await axios.put("https://adv-webtech-hms-nestjs-production.up.railway.app/hospital/updateHospital/"+item.id, formData);
           
 
             setSuccess('Hospital edited successfully');
@@ -145,7 +145,7 @@ export default function EditHospital({item}) {
   export async function getServerSideProps(context) {
     const id=context.params.id;
    
-       const response = await axios.get('http://adv-webtech-hms-nestjs-production.up.railway.app/hospital/getHospital/'+id);
+       const response = await axios.get('https://adv-webtech-hms-nestjs-production.up.railway.app/hospital/getHospital/'+id);
        const item = await response.data;
       
    return { props: { item } }

@@ -88,7 +88,7 @@ export default function findAdminByName({ data }) {
   export async function getServerSideProps({ query }) {
     const inputValue = query.inputValue;
     try {
-      const response = await axios.get('http://adv-webtech-hms-nestjs-production.up.railway.app/admin/getAdminByName/'+inputValue);
+      const response = await axios.get('https://adv-webtech-hms-nestjs-production.up.railway.app/admin/getAdminByName/'+inputValue);
       const data = await response.data;
       return {
         props: {

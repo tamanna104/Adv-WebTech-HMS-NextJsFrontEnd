@@ -11,7 +11,7 @@ export default function adminProfile({ data }) {
       try {
         const confirmed = window.confirm("Sure you wanna remove this Admin?");
         if(confirmed){
-          const response = await axios.delete(`http://adv-webtech-hms-nestjs-production.up.railway.app/admin/rmvAdmin/${id}`)
+          const response = await axios.delete(`https://adv-webtech-hms-nestjs-production.up.railway.app/admin/rmvAdmin/${id}`)
           const data = await response.data;
           if (data && data.affected) {
             console.log("Admin Successfully Deleted")
@@ -60,7 +60,7 @@ export default function adminProfile({ data }) {
   export async function getServerSideProps(context) {
     const id=context.params.id;
    
-       const response = await axios.get('http://adv-webtech-hms-nestjs-production.up.railway.app/admin/getAdmin/'+id);
+       const response = await axios.get('https://adv-webtech-hms-nestjs-production.up.railway.app/admin/getAdmin/'+id);
        const data = await response.data;
       
    return { props: { data } }

@@ -28,7 +28,7 @@ export default function hospitalInfo({ data }) {
   export async function getServerSideProps(context) {
     const id=context.params.id;
    
-       const response = await axios.get('http://adv-webtech-hms-nestjs-production.up.railway.app/hospital/getHospital/'+id);
+       const response = await axios.get('https://adv-webtech-hms-nestjs-production.up.railway.app/hospital/getHospital/'+id);
        const data = await response.data;
       
    return { props: { data } }

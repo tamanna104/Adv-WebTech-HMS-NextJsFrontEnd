@@ -25,7 +25,7 @@ export default function AddBloodBank() {
         console.log(data.dateOfRecentCollection);
         console.log(formData);
         try {
-            const response = await axios.post("http://adv-webtech-hms-nestjs-production.up.railway.app/bloodBank/insertBloodBank",
+            const response = await axios.post("https://adv-webtech-hms-nestjs-production.up.railway.app/bloodBank/insertBloodBank",
                 formData, {
                 headers: {
                     "Content-Type": "multipart/form-data"

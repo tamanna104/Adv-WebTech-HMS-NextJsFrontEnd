@@ -23,7 +23,7 @@ export default function Session() {
     const handleSignOut = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.get('http://adv-webtech-hms-nestjs-production.up.railway.app/admin/signout')
+            const response = await axios.get('https://adv-webtech-hms-nestjs-production.up.railway.app/admin/signout')
             console.log(response.data)
             sessionStorage.removeItem('email');
             setEmail(null);

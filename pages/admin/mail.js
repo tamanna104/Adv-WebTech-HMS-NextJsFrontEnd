@@ -23,7 +23,7 @@ export default function Mail() {
         formData.append('text', data.text);
         console.log(formData);
         try {
-            const response = await axios.post("http://adv-webtech-hms-nestjs-production.up.railway.app/admin/sendemail",
+            const response = await axios.post("https://adv-webtech-hms-nestjs-production.up.railway.app/admin/sendemail",
                 formData, {
                 headers: {
                     "Content-Type": "multipart/form-data"

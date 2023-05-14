@@ -36,7 +36,7 @@ export default function EditBloodBank({item}) {
         // formData.append('password', data.password);
         console.log(formData);
         try {
-          const response = await axios.put("http://adv-webtech-hms-nestjs-production.up.railway.app/bloodBank/updateBloodBank/"+item.id, formData);
+          const response = await axios.put("https://adv-webtech-hms-nestjs-production.up.railway.app/bloodBank/updateBloodBank/"+item.id, formData);
           
 
             setSuccess('BloodBank edited successfully');
@@ -114,7 +114,7 @@ export default function EditBloodBank({item}) {
   export async function getServerSideProps(context) {
     const id=context.params.id;
    
-       const response = await axios.get('http://adv-webtech-hms-nestjs-production.up.railway.app/bloodBank/getBloodBank/'+id);
+       const response = await axios.get('https://adv-webtech-hms-nestjs-production.up.railway.app/bloodBank/getBloodBank/'+id);
        const item = await response.data;
       
    return { props: { item } }

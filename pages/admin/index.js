@@ -91,9 +91,9 @@ export default function dashBoard(props) {
   }
   
   export async function getServerSideProps() {
-    const adminCount = await axios.get('http://adv-webtech-hms-nestjs-production.up.railway.app/admin/countAdmin');
-    const hospitalCount = await axios.get('http://adv-webtech-hms-nestjs-production.up.railway.app/hospital/countHospital');
-    const bloodBankCount = await axios.get('http://adv-webtech-hms-nestjs-production.up.railway.app/bloodBank/countBloodBank');
+    const adminCount = await axios.get('https://adv-webtech-hms-nestjs-production.up.railway.app/admin/countAdmin');
+    const hospitalCount = await axios.get('https://adv-webtech-hms-nestjs-production.up.railway.app/hospital/countHospital');
+    const bloodBankCount = await axios.get('https://adv-webtech-hms-nestjs-production.up.railway.app/bloodBank/countBloodBank');
 
     const data = {
       aCount: await adminCount.data,

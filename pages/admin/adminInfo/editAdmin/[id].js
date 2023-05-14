@@ -46,7 +46,7 @@ export default function EditAdmin({item}) {
         // formData.append('password', data.password);
         console.log(formData);
         try {
-          const response = await axios.put("http://adv-webtech-hms-nestjs-production.up.railway.app/admin/updateAdmin/"+item.id, formData);
+          const response = await axios.put("https://adv-webtech-hms-nestjs-production.up.railway.app/admin/updateAdmin/"+item.id, formData);
           
             setSuccess('Admin edited successfully');
             //reset();
@@ -204,7 +204,7 @@ export default function EditAdmin({item}) {
   export async function getServerSideProps(context) {
     const id=context.params.id;
    
-       const response = await axios.get('http://adv-webtech-hms-nestjs-production.up.railway.app/admin/getAdmin/'+id);
+       const response = await axios.get('https://adv-webtech-hms-nestjs-production.up.railway.app/admin/getAdmin/'+id);
        const item = await response.data;
       
    return { props: { item } }

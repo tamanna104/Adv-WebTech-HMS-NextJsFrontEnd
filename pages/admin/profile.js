@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 export default function myProfile({ data }) {
     const router = useRouter();
     useEffect(() => {
-      const response = axios.get('http://adv-webtech-hms-nestjs-production.up.railway.app/admin/getProfile/');
+      const response = axios.get('https://adv-webtech-hms-nestjs-production.up.railway.app/admin/getProfile/');
       console.log("useeffect", response)
     }, []);
 
@@ -37,7 +37,7 @@ export default function myProfile({ data }) {
 
   export async function getServerSideProps() {
        
-        const response = await axios.get('http://adv-webtech-hms-nestjs-production.up.railway.app/admin/getProfile/');
+        const response = await axios.get('https://adv-webtech-hms-nestjs-production.up.railway.app/admin/getProfile/');
        const data = await response.data;
     
       
