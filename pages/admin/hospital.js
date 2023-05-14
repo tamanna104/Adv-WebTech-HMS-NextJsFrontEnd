@@ -20,8 +20,6 @@ export default function hospital() {
          <div className="mx-auto max-w-2xl flex "> 
               <a href={"/admin/viewHospital"} className={"block w-full bg-teal-200 p-2 my-2  hover:bg-teal-700 hover:text-white rounded-m shadow-md cursor-pointer"}
                 >View Hospitals</a>
-                <a href={"/admin/findHospital"} className={"block w-full bg-teal-200 p-2 my-2 hover:bg-teal-700 hover:text-white rounded-m shadow-md cursor-pointer"}
-                >Find Hospitals</a>
                  <a href={"/admin/editHospital"} className={"block w-full bg-teal-200 p-2 my-2 hover:bg-teal-700 hover:text-white rounded-m shadow-md cursor-pointer"}
                 >Edit Hospitals</a>
                 <a href={"/admin/addHospital"} className={"block w-full bg-teal-200 p-2 my-2 hover:bg-teal-700 hover:text-white rounded-m shadow-md cursor-pointer"}

@@ -21,8 +21,8 @@ export default function Doctor() {
          <div className="mx-auto max-w-2xl flex "> 
               <a href={"/admin/viewAdmins"} className={"block w-full bg-teal-200 p-2 my-2  hover:bg-teal-700 hover:text-white rounded-m shadow-md cursor-pointer"}
                 >View Admins</a>
-                <a href={"/admin/findAdmin"} className={"block w-full bg-teal-200 p-2 my-2 hover:bg-teal-700 hover:text-white rounded-m shadow-md cursor-pointer"}
-                >Find Admin by ID</a>
+                {/* <a href={"/admin/findAdmin"} className={"block w-full bg-teal-200 p-2 my-2 hover:bg-teal-700 hover:text-white rounded-m shadow-md cursor-pointer"}
+                >Find Admin by ID</a> */}
                  <a href={"/admin/findAdminByName"} className={"block w-full bg-teal-200 p-2 my-2 hover:bg-teal-700 hover:text-white rounded-m shadow-md cursor-pointer"}
                 >Find Admin by Name</a>
                 <a href={"/admin/findAdminByGender"} className={"block w-full bg-teal-200 p-2 my-2 hover:bg-teal-700 hover:text-white rounded-m shadow-md cursor-pointer"}
