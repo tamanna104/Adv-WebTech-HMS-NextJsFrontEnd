@@ -59,7 +59,7 @@ export default function SignUp() {
       <>
       
       <Mylayout title = "Signup"/>
-      <div class="py-40 sm:ml-68">
+      <div class="py-40 sm:ml-68 p-6">
       <section className="text-gray-600 body-font mx-auto w-96">
       
        <div class="flex flex-col items-center justify-center px-auto mx-auto md:h-screen lg:py-0">
@@ -212,8 +212,9 @@ export default function SignUp() {
         
 
       </div>
-      <Footer />
-             
+      <div className="relative mb-4">
+            <Footer/>
+            </div>
       </>
     )
   }

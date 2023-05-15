@@ -19,7 +19,9 @@ export default function Home() {
             </div>
           </div>
     </section>
-    <Footer/>
+    <div className="relative mb-4">
+            <Footer/>
+            </div>
       
     </>
   )

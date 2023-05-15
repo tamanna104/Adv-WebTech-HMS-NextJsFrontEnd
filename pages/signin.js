@@ -68,7 +68,9 @@ export default function SignIn() {
           </section>
 
 </div>
-<Footer />
+        <div className="relative mb-4">
+            <Footer/>
+            </div>
 </>
   )
 }
