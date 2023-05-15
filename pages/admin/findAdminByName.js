@@ -59,7 +59,7 @@ export default function findAdminByName({ data }) {
                 {data.map(item => (
                     <li key={item.id}>
                   <div class="h-full flex flex-col items-center text-center pt-10">
-                    <Image src={"http:/localhost:3000/admin/getimage/"+item.filename} alt="me" width="150" height="150" />
+                    <Image src={"https://adv-webtech-hms-nestjs-production.up.railway.app/admin/getimage/"+item.filename} alt="me" width="150" height="150" />
                     <div class="w-full">
                       <h2 class="title-font font-medium text-lg text-gray-900">{item.name}</h2>
                       <h3 class="text-gray-900 mb-3">Age: {item.age}</h3>

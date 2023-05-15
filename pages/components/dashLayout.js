@@ -8,7 +8,7 @@ export default function Dashlayout(props){
     <>
     <Header title ={props.title}/>
     <header class="bg-teal-100 body-font flex flex-wrap">
-    <div class="pt-4 mx-3 flex" >
+    <div class="pt-2 mx-3 flex" >
         <Image src="/admin1.png" alt="me" width="65" height="65" />
         <span class="container flex flex-wrap flex-col md:flex-row ml-3 text-sm text-teal-600">Welcome</span>
         </div>
@@ -69,7 +69,7 @@ export default function Dashlayout(props){
 
             <main>
             </main>
-    
+            <Footer/>
         {/* <dev style={{position: "fixed", bottom: 0, width: "100%", height:"5%"}} >Hospital Management @copyright</dev> */}
     </>
     )
