@@ -28,7 +28,7 @@ export default function viewHospitals({ data }) {
         <ul className="list-none">
           {data.map(item => (
             <li key={item.id} className="mb-4">
-              <a href={"/admin/adminInfo/"+item.id} className={"block w-full bg-white p-2 my-2 hover:bg-green-300 hover:text-teal-800 rounded-md shadow-md cursor-pointer"}
+              <a href={"/admin/hospitalInfo/"+item.id} className={"block w-full bg-white p-2 my-2 hover:bg-green-300 hover:text-teal-800 rounded-md shadow-md cursor-pointer"}
                 >{item.name}</a>
             </li>
           ))}

@@ -8,11 +8,11 @@ export default function Dashlayout(props){
     <>
     <Header title ={props.title}/>
     <header class="bg-teal-100 body-font flex flex-wrap">
-    <div class="pt-4 mx-3" >
+    <div class="pt-4 mx-3 flex" >
         <Image src="/admin1.png" alt="me" width="65" height="65" />
         <span class="container flex flex-wrap flex-col md:flex-row ml-3 text-sm text-teal-600">Welcome</span>
         </div>
-        <div class="container mx-auto flex flex-wrap flex-row justify-center pt-8 relative mb-5 p-4">
+        <div class="container mx-auto flex flex-wrap flex-row justify-center pt-2 relative mb-2 p-2">
             <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
             <span class="text-2xl text-teal-600 ">Hospital Management System</span>
             </a>
