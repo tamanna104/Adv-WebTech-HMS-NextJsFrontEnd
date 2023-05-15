@@ -27,7 +27,7 @@ export default function adminProfile({ data }) {
     return (
       <>
         <Dashlayout title = "Admin Info"/>
-        <div class="flex flex-wrap justify-center p-4 mb-20">
+        <div class="flex flex-wrap justify-center p-4">
           <div class="p-4">
             <div class="h-full flex flex-col items-center text-center">
               <Image src={"https://adv-webtech-hms-nestjs-production.up.railway.app/admin/getimage/"+data.filename} alt="me" width="150" height="150" />
@@ -53,7 +53,6 @@ export default function adminProfile({ data }) {
             Delete
           </button>
         </div>
-        <Footer/>
       </>
     )
   }

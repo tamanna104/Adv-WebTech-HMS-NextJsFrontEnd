@@ -206,7 +206,7 @@ export default function AddAdmin() {
             </div>
         </section>
         </div>
-        <Footer/>
+
       </>
     )
   }

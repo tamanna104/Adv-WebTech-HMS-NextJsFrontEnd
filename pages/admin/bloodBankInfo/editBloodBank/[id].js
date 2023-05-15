@@ -56,7 +56,7 @@ export default function EditBloodBank({item}) {
       <>
       
       <Dashlayout title = "Edit BloodBank Info"/>
-      <div class="pt-0 sm:ml-68 p-4 mb-20">
+      <div class="pt-0 sm:ml-68 p-4 mb-2">
         <section className="text-gray-600 body-font mx-auto w-96">
         
           <div class="flex flex-col justify-center px-auto mx-auto">
@@ -109,7 +109,6 @@ export default function EditBloodBank({item}) {
               </div>
           </section>
         </div>
-        <Footer/>
       </>
     )
   }
