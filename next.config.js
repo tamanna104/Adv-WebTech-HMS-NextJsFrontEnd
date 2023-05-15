@@ -10,7 +10,7 @@ module.exports = {
       {
         protocol: 'https',
         hostname: 'adv-webtech-hms-nestjs-production.up.railway.app',
-        port: '3000',    
+        port: '',    
       },
     ],
   },
