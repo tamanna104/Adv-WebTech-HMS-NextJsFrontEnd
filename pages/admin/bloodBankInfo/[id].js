@@ -27,7 +27,7 @@ export default function bloodBankInfo({ data }) {
 
             {/* </li>
         ))} */}
-             <div class="flex flex-wrap justify-center p-4 mb-10">
+             <div class="flex flex-wrap justify-center p-4 mb-20">
               <div class="p-4">
                 <div class="w-full bg-teal-100 rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
                 <div class="p-6 space-y-19 md:space-y-6 sm:p-15">
