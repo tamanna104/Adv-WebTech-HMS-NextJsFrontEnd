@@ -46,7 +46,7 @@ export default function SignUp() {
           
 
             setSuccess('signed up successfully');
-            reset();
+            router.push('/signin');
 
         }
         catch (error) {

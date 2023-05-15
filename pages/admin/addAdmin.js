@@ -46,7 +46,8 @@ export default function AddAdmin() {
           
 
             setSuccess('Admin add successfully');
-            reset();
+            router.push('/admin/viewAdmins');
+            // reset();
 
         }
         catch (error) {
