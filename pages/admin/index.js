@@ -4,6 +4,7 @@ import Image from "next/image"
 import SessionCheck from "../components/sessionCheck"
 import axios from "axios";
 import dynamic from 'next/dynamic';
+import Footer from "../components/footer";
 export default function dashBoard(props) {
   const ApexCharts = dynamic(() => import('react-apexcharts'), { ssr: false });
   const barChartOptions = {
@@ -86,6 +87,7 @@ export default function dashBoard(props) {
         <ApexCharts options={graphOptions} series={graphSeries} type="area" width={500} height={350} />
         </div>
       </div>
+      <Footer/>
       </>
     )
   }

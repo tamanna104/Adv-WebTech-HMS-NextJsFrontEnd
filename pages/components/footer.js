@@ -2,28 +2,11 @@ import Image from "next/image"
 export default function Footer()   
 {
   return(
-//     <footer class="bg-gray-900 text-white py-4">
-//   <div class="container mx-auto flex justify-between px-4">
-//     <div>
-//       <h3 class="font-bold">Contact Us</h3>
-//       <p>Email: info@example.com</p>
-//       <p>Phone: 555-555-5555</p>
-//     </div>
-//     <div>
-//       <h3 class="font-bold">Follow Us</h3>
-//       <div class="flex mt-2">
-//         <a href="#" class="mr-4"><i class="fab fa-facebook-f"></i></a>
-//         <a href="#" class="mr-4"><i class="fab fa-twitter"></i></a>
-//         <a href="#" class="mr-4"><i class="fab fa-instagram"></i></a>
-//       </div>
-//     </div>
-//   </div>
-// </footer>
 
 
     <footer class="text-gray-600 body-font fixed bottom-0 w-full">
       <div class="bg-gray-100">
-        <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+        <div class="container px-2 py-2 mx-auto flex items-center sm:flex-row flex-col">
           <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
             <Image src="/medical.png" alt="me" width="60" height="60" />
             <span class="ml-3 text-xl">Sheba</span>

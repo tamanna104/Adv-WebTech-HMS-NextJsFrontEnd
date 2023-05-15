@@ -59,7 +59,7 @@ export default function SignUp() {
       <>
       
       <Mylayout title = "Signup"/>
-      <div class="py-40 sm:ml-68 p-6">
+      <div class="py-40 sm:ml-68 p-4 mb-20">
       <section className="text-gray-600 body-font mx-auto w-96">
       
        <div class="flex flex-col items-center justify-center px-auto mx-auto md:h-screen lg:py-0">
@@ -124,7 +124,7 @@ export default function SignUp() {
                   </div>
                 <div className="relative mb-4">
                       <label for="gender" >Gender</label>
-                        <input type="text" id="gender" class="w-full bg-slate-100 rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" placeholder="gender" required=""{...register('gender', { required: true, pattern: /^(?:male|female|other)$/ })}/>
+                        <input type="text" id="gender" class="w-full bg-slate-100 rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" placeholder="gender" required=""{...register('gender', { required: true, pattern: /^(?:Male|Female|Other)$/ })}/>
                         {errors.gender &&
                              (
                               <p>
@@ -212,9 +212,7 @@ export default function SignUp() {
         
 
       </div>
-      <div className="relative mb-4">
-            <Footer/>
-            </div>
+      <Footer/>
       </>
     )
   }

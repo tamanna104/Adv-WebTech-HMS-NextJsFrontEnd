@@ -14,6 +14,7 @@ export default function Doctor() {
         <input type="text" placeholder=""></input><br/><br/>
 
       </div>
+      
         
       </>
     )

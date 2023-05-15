@@ -64,7 +64,7 @@ export default function EditAdmin({item}) {
       <>
       
       <Dashlayout title = "Edit Admin Info"/>
-      <div class="pt-0 sm:ml-68">
+      <div class="pt-0 sm:ml-68 p-4 mb-20">
         <section className="text-gray-600 body-font mx-auto w-96">
         
           <div class="flex flex-col justify-center px-auto mx-auto">

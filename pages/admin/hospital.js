@@ -1,4 +1,5 @@
 import Dashlayout from "../components/dashLayout"
+import Footer from "../components/footer"
 import Link from "next/link"
 import Image from "next/image"
 export default function hospital() {
@@ -26,6 +27,7 @@ export default function hospital() {
                 >Add Hospital</a>
 
       </div>
+      <Footer/>
       </>
     )
   }

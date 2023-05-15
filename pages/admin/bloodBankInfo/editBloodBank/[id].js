@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import axios from "axios"
 import { useState } from "react"
 import { useRouter } from 'next/router'
+import Footer from "@/pages/components/footer";
 import Link from "next/link"
 import Image from "next/image"
 export default function EditBloodBank({item}) {
@@ -55,7 +56,7 @@ export default function EditBloodBank({item}) {
       <>
       
       <Dashlayout title = "Edit BloodBank Info"/>
-      <div class="pt-0 sm:ml-68 p-7">
+      <div class="pt-0 sm:ml-68 p-4 mb-20">
         <section className="text-gray-600 body-font mx-auto w-96">
         
           <div class="flex flex-col justify-center px-auto mx-auto">
@@ -108,6 +109,7 @@ export default function EditBloodBank({item}) {
               </div>
           </section>
         </div>
+        <Footer/>
       </>
     )
   }

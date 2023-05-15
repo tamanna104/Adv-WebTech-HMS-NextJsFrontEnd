@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import axios from "axios"
 import { useState } from "react"
 import { useRouter } from 'next/router'
+import Footer from "../components/footer"
 import Link from "next/link"
 import Image from "next/image"
 export default function AddAdmin() {
@@ -58,7 +59,7 @@ export default function AddAdmin() {
       <>
       
       <Dashlayout title = "Admins"/>
-      <div class="pt-0 sm:ml-68">
+      <div class="pt-0 sm:ml-68 p-4 mb-20">
         <section className="text-gray-600 body-font mx-auto w-96">
         
           <div class="flex flex-col justify-center px-auto mx-auto">
@@ -123,7 +124,7 @@ export default function AddAdmin() {
                   </div>
                 <div className="relative mb-4">
                       <label for="gender" className="leading-7 text-mid text-gray-700" >Gender</label>
-                        <input type="text" id="gender" placeholder="gender" className="w-full bg-slate-100 rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required=""{...register('gender', { required: true, pattern: /^(?:male|female|other)$/ })}/>
+                        <input type="text" id="gender" placeholder="gender" className="w-full bg-slate-100 rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required=""{...register('gender', { required: true, pattern: /^(?:Male|Female|Other)$/ })}/>
                         {errors.gender &&
                              (
                               <p>
@@ -205,6 +206,7 @@ export default function AddAdmin() {
             </div>
         </section>
         </div>
+        <Footer/>
       </>
     )
   }

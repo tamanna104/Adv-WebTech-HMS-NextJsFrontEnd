@@ -1,4 +1,5 @@
 import Dashlayout from "../components/dashLayout"
+import Footer from "../components/footer"
 import Link from "next/link"
 import Image from "next/image"
 export default function bloodBank() {
@@ -22,6 +23,7 @@ export default function bloodBank() {
                 >Add Blood Banks</a>
 
       </div>
+      <Footer/>
         
       </>
     )

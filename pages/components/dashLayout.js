@@ -69,9 +69,6 @@ export default function Dashlayout(props){
 
             <main>
             </main>
-            <div className="relative mb-4">
-            <Footer/>
-            </div>
         {/* <dev style={{position: "fixed", bottom: 0, width: "100%", height:"5%"}} >Hospital Management @copyright</dev> */}
     </>
     )

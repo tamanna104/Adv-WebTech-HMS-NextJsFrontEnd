@@ -31,7 +31,7 @@ export default function Doctor() {
                 >Add New Admin</a>
 
       </div>
-      {/* </div> */}
+      <Footer/>
       </>
     )
   }
