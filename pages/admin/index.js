@@ -87,7 +87,6 @@ export default function dashBoard(props) {
         <ApexCharts options={graphOptions} series={graphSeries} type="area" width={500} height={350} />
         </div>
       </div>
-      <Footer/>
       </>
     )
   }
